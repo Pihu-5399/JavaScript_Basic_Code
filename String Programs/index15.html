@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    I/P = Hello World
+    O/P = Hexxo Worxd
+    <script>
+        function replaceCharacters(inputString) {
+            let outputString = '';
+            for (let i = 0; i < inputString.length; i++) {
+                if (inputString[i] === 'l') {
+                    outputString += 'x';
+                } else if (inputString[i] === 'o') {
+                    outputString += 'e';
+                } else {
+                    outputString += inputString[i];
+                }
+            }
+            return outputString;
+        }
+
+        let inputString = "Hello World";
+        let outputString = replaceCharacters(inputString);
+        console.log(outputString);  // Output: Hexxo Worxd
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>WAP to print Highest and Second Highest Element in an given array</h3>
+    <script>
+        let arr=[0,1,2,4,5,3,1,7,8,9,10]
+        let max1=0;
+        let max2=0;
+        for(let i=1;i<arr.length; i++)
+        {
+            if(arr[i]>max1)
+            {
+                max2=max1;
+                max1=arr[i];
+            }
+            else if(max1==max2 || (max1!=max2&&max1<arr[i]))
+            {
+                max2=arr[i]
+            }
+        }
+        console.log("First Hightest Element = "+max1);
+        console.log("Second Highest Element = "+max2);
+    </script>
+</body>
+</html>

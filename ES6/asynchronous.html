@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Asynchronous</h1>
+    <script>
+        //1. setTimeOut()==============
+        // console.log('hello1');
+        // setTimeout(() => {
+        //     console.log('hello2');
+        // }, 4000);
+        // console.log('hello3');
+        //or
+        // function a(arg1,arg2,arg3) {
+        //     console.log(arg1,arg2,arg3);
+        // }
+        // setTimeout(a,5000,'nik','delhi','abc');
+        //clearTimeout()===============
+        // function greet() {
+        //     console.log('hello i am greet function');
+        //     let x = setTimeout(greet,4000)
+        //     clearTimeout(x)
+        //     //to see the timer id of settimeout()
+        //     let y = x
+        //     console.log(y);
+        // }
+        // greet()
+
+        //2. setInterval()===============
+        // let x = setInterval(() => {
+        //     console.log('hello'); //3 times
+        // }, 3000);
+        // setTimeout(() => {
+        //     clearInterval(x)
+        // }, 9000);
+
+        //3.callback function()=============
+        //synchronous behavior======
+        // function print(name,cb) {
+        //     console.log('before calling callback');
+        //     cb(name)
+        //     console.log('after calling callback');
+        // }
+        // function sayMyName(name) {
+        //     console.log('My name is :' + name);
+        // }
+        // print('abc',sayMyName)
+
+        //asynchronous behavior======
+        // let emp = [{name:'pihu'},{name:'riya'}]
+        // function enroll(student,cb) {
+        //     console.log('before callback');
+        //     setTimeout(() => {
+        //         console.log('start task');
+        //         emp.push(student)
+        //         console.log('student enroll : done');
+        //         cb();
+        //         console.log('end task');
+        //     }, 3000);
+        //     console.log('after callback');
+        // }
+        // function getStudent() {
+        //     setTimeout(() => {
+        //         console.log('All student is : ' + emp);
+        //     }, 1000);
+        // }
+        // let newStudent = {name : 'sanaya'}
+        // enroll(newStudent,getStudent)
+
+        //callback hell()===================
+        // setTimeout(() => {
+        //     console.log('1');
+        //     setTimeout(() => {
+        //     console.log('2');
+        //     setTimeout(() => {
+        //     console.log('3');
+        //     setTimeout(() => {
+        //     console.log('4');
+        // }
+        // }
+        // }
+        // }
+
+        //promises===========================
+
+    </script>
+</body>
+</html>

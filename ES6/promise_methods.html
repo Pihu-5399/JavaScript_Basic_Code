@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Promise methods</h1>
+    <script>
+        //three promises
+        let x1 = new Promise((res,rej)=>{
+            setTimeout(() => {
+                res({name :"Pihu"})
+            }, 1000);
+        })
+        let x2 = new Promise((res,rej)=>{
+            setTimeout(() => {
+                res("hii i am resolve 2");
+            }, 5000);
+        })
+        let x3 = new Promise((res,rej)=>{
+            res("hii i am resolve 3");
+        })
+        //promise.all()========================
+        // let data = Promise.all([x1,x2,x3])
+        // data.then((item)=>{
+        //     console.log(item);
+        // }).catch((err)=>{
+        //     console.log(err); 
+        // })
+        //promise.allsettled()====================
+        // Promise.allSettled([x1,x2,x3]).then((data)=>{
+        //     console.log(data);
+        // }).catch((err)=>{
+        //     console.log(err);
+        // })
+        //promise.race()=======================
+        Promise.race([x1,x2,x3]).then((data)=>{
+            console.log(data);
+        }).catch((err)=>{
+            console.log(err);
+        })
+        //promise.any()==========================
+        // Promise.any([x1,x2,x3]).then((data)=>{
+        //     console.log(data);
+        // }).catch((err)=>{
+        //     console.log(err);
+        // })
+    </script>
+</body>
+</html>

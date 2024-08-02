@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Async & Await</h1>
+    <script>
+        async function myDisplay() {
+            let myPromise = new Promise((res)=> {
+                // resolve("I love You !!");
+                setTimeout(()=> {
+                    res("I love You !!");
+                }, 3000);
+            });
+            let x = await myPromise;
+            console.log(x);
+        }
+        myDisplay();
+    </script>
+</body>
+
+</html>

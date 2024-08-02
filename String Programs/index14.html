@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h4>WAP to check The Program Is Anagram Or Not</h4>
+    <script>
+        let s1 = "race";
+        let s2 = "care";
+        function main() 
+        {
+            if (isAnagram(s1, s2)) 
+            {
+                console.log("Anagram");
+            }
+            else {
+                console.log("Not an anagram");
+            }
+        }
+        function isAnagram(s1, s2){
+            if (s1.length != s2.length) 
+            {
+                return false;
+            }
+            let a = [...s1];
+            let b = [...s2];
+            a = a.sort();
+            b = b.sort();
+            for (let i = 0; i < a.length; i++) 
+            {
+                if (a[i] != b[i])
+                    return false;
+            }
+            return true;
+        }
+        main();
+    </script>
+</body>
+
+</html>

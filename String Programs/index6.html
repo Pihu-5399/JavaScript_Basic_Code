@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   WAP to print non repeating character in a string
+   <script>
+    let s1="abcabef"
+let ch=[...s1];
+let min=100,res='';
+let c;
+for(let i=0;i<ch.length;i++){
+    c=0;
+    for(let j=i+1;j<ch.length;j++){
+        if(ch[i]==ch[j]){
+            c=1;
+        }
+    }
+    if(c==0){
+        console.log(ch[i]);
+        break;
+    }
+}
+</script>
+</body>
+</html>

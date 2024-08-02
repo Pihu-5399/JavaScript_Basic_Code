@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>OBJECT</h1>
+    <script>
+        //Object Literals
+        
+        //1.
+        let obj={
+            name:'pihu',
+            add:'jsr',
+            ispartofjsp:true
+        }
+        console.log(obj);
+        //2.
+        let hi={}
+        hi.name="pihu"
+        hi.add="delhi"
+        console.log(hi);
+
+        //creating instance of object directly
+
+        let obj1=new Object()
+            obj1.name='pihu'
+            obj1.add='jsr'
+            obj1.ispartofjsp=true
+        console.log(obj1);
+
+        //function constructor way
+
+        function details(name,add,isActive){
+            this.name=name
+            this.add=add
+            this.isActive=isActive
+        }
+        let obj3= new details('pohu','jssr',true)
+        console.log(obj3);
+
+    </script>
+</body>
+</html>

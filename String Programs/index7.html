@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    WAP to count vowels in a given string
+    <script>
+       let s = "Eagle";
+       let ch=[...s];
+
+       let count=0;
+       for(let i=0;i<ch.length;i++)
+       {
+        if(ch[i]=='a'|| ch[i]=='e'|| ch[i]=='i'|| ch[i]=='o' || ch[i]=='u'|| ch[i]=='i'|| ch[i]=='A'||ch[i]=='E'||ch[i]=='I'||ch[i]=='O'||ch[i]=='U'){
+            count++;
+        }
+       }
+       console.log("No. of Vowels = "+count );
+    </script>
+</body>
+</html>
+

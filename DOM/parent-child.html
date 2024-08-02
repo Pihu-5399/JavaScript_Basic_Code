@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #root{
+            background-color: red;
+        }
+        #child1{
+            background-color: yellow;
+        }
+        #child2{
+            background-color: blue;
+        }
+        #hed1{
+            color: black;
+        }
+        #hed2{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Parent-Child traversing</h1>
+    <div class="container" id="root">
+        <div id="child1">
+            <h1 id="hed1">Heading1</h1>
+        </div>
+        <div id="child2">
+            <h1 id="hed2">Heading2</h1>
+        </div>
+    </div>
+    <script>
+        //childNodes
+        console.log(root.childNodes);
+        //children
+        console.log(root.children);
+        //nodeName
+        console.log(root.nodeName);
+        //nodeType
+        console.log(root.nodeType);
+        console.log(root.childNodes[0].nodeType);
+        console.log(root.childNodes[1].nodeType);
+        //firstChild v/s firstElementChild
+        console.log(root.firstChild);
+        console.log(root.firstElementChild);
+        console.log(root.children[0].firstElementChild);
+        //lastChild v/s lastElementChild
+        console.log(root.lastChild);
+        console.log(root.lastElementChild);
+        console.log(root.children[0].lastChild);
+        console.log(root.children[0].lastElementChild);
+    </script>
+</body>
+</html>

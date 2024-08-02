@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number</title>
+</head>
+<body>
+    <h1>Prime Number Method - 1</h1>
+    <script>
+
+let num = Number(prompt("Enter the number: "));
+        let isPrime = true;
+
+        if(num == 0 || num == 1)
+        {
+            isPrime = false;
+        }
+        else
+        {
+            for(let i = 2; i<=(Math.trunc(num/2));i++ )
+            {
+                if(num % i == 0)
+                {
+                    isPrime=true;
+                    break;
+                }
+            }
+            if(isPrime)
+            {
+                console.log(num+" Is Prime Number");
+            }
+            else
+            {
+                console.log(num+" Is Not Prime Number");
+            }
+        }
+
+        
+        // let num = Number(prompt("Enter the number: "));
+        // let isPrime = true;
+
+        // if(num == 0 || num == 1)
+        // {
+        //     isPrime = false;
+        // }
+        // else
+        // {
+        //     for(let i = 2; i<=(Math.trunc(num/2));i++ )
+        //     {
+        //         if(num % i == 0)
+        //         {
+        //             isPrime=true;
+        //             break;
+        //         }
+        //     }
+        //     if(isPrime)
+        //     {
+        //         console.log(num+" Is Prime Number");
+        //     }
+        //     else
+        //     {
+        //         console.log(num+" Is Not Prime Number");
+        //     }
+        // }
+    </script>
+</body>
+</html>

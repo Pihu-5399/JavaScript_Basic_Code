@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Sum of numbers in a given string
+     <script>
+        let s="I wa22nt 16 job ear40ly12"
+        let ch=[...s];
+
+        let res=0;
+        let sum=0;
+
+        for(let i=0; i<ch.length;i++)
+        {
+        if(ch[i]>='0' && ch[i]<='9')
+        {
+            res=res*10+Number(ch[i]);
+        }
+        else{
+            if(res!=0)
+            {
+                sum+=Number(res);
+                res=0;
+            }
+        }
+
+        if(i==ch.length-1)
+        sum+=res;
+
+        }
+        console.log(sum);
+     </script>
+</body>
+</html>

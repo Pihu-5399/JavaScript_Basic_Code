@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern - 9</title>
+</head>
+<body>
+    <h1>Pattern - 9</h1>
+    <script>
+        let num = Number(prompt("Enter the Length: "))
+        let string = "";
+        for (let i = 1; i <=num ; i++) 
+        {
+            for(let j=1;j<=i;j++)
+            {
+                string +=" "
+            }
+            for(let j=i;j<num;j++)
+            {
+                string +="*";
+            }
+            for(let j = i;j<=num;j++)
+            {
+                string +="*"
+            }
+            string +="\n";
+        }
+        for(let i =2;i<=num;i++)
+        {
+            for(let j=i;j<=num;j++)
+            {
+                string +=" ";
+            }
+            for(let j=1;j<i;j++)
+            {
+                string +="*"
+            }
+            for(let j = 1;j<=i;j++)
+            {
+                string +="*";
+            }
+            string +="\n";
+        }
+        console.log(string);
+        
+    </script>
+</body>
+</html>

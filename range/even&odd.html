@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let lower= Math.trunc(prompt('Enter lower range'))
+        let higher= Math.trunc(prompt('Enter higher range'))
+
+        let evenP=0
+        let oddP=0
+
+        for(i=lower; i<=higher; i++){
+
+        if(i%2==0){
+
+            evenP++
+            if(evenP%2!=0){
+                console.log(`Even number with odd position ${i}`)
+            }
+        }
+        else{
+            oddP++
+            if(oddP%2==0){
+                console.log(`Odd number with even position ${i}`)
+            }
+        }
+        }
+        
+    </script>
+</body>
+</html>

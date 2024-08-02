@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    WAP Find max occurance of each character in a given string
+<script>
+    let s1="banana"
+    let ch=[...s1];
+    let max=0;
+    let res=" ";
+    for(let i=0;i<ch.length;i++)
+    {
+     let count=1;
+     for(let j=i+1;j<ch.length;j++)
+     {
+        if(ch[i]==ch[j])
+        {
+            count++;
+        }
+     }
+     if(count>max && ch[i]!=" ")
+     {
+        max=count;
+        res=ch[i];
+     }
+    }
+    console.log(res+" = "+max);
+</script>
+</body>
+</html>

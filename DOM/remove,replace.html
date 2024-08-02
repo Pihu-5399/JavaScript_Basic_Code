@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>remove,replace elements in dom </h1>
+    <!-- <ul id="menu">
+        <li id="abc">Homepage</li>
+        <li>Service</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+    <h1 id="abc">Hello this is remove and replace</h1> -->
+
+    <!-- replace-with========================================= -->
+    <h3>Using the <i>replace-with() method</i> to replace the html elements in js</h3>
+    <div id= "oldElement">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+             Consectetur rem perferendis id temporibus?</p>
+        <h1>Hello!</h1>     
+    </div>
+    <div id="newElement">This is new element</div>
+
+    <script>
+        // let list =document.createElement('li')
+        // list.innerText="home"
+        // let menu=document.getElementById('menu')
+        // //replace-child==============================
+        // menu.replaceChild(list,menu.firstElementChild) //or
+        // // menu.replaceChild(list,document.getElementById('abc'))
+        // //remove-child===============================
+        // menu.removeChild(menu.lastElementChild)
+        // //remove-attribute===========================
+        // let head=document.getElementById('abc')
+        // head.removeAttribute('id')
+
+        //replace-with==============================
+        // var newElement=document.createElement('h2')
+        // newElement.innerText = " This is NewELE"
+        // var oldElement=document.getElementById("oldElement")
+        // let x = "hello i am new one"
+        // oldElement.replaceWith(x)
+        // ========================================================
+        var oldElement = document.getElementById('oldElement')
+        var newElement = document.getElementById('newElement')
+        oldElement.replaceWith(newElement)
+    </script>
+</body>
+</html>

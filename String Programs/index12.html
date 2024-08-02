@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    WAP to reverse a program in itself.
+    <script>
+        let s1 = "Banglore is very coolest city"
+        let rev="";
+        let s2=s1.split("e");
+        for(let i=0; i<s2.length;i++)
+        {
+        //    let res=s2[i];
+           let output="";
+           for(let j=s2[i].length-1;j>=0;j--)
+           {
+            output+=s2[i].charAt(j);
+           }
+           rev+=output+" ";
+        }
+        console.log(rev);
+    </script>
+</body>
+</html>

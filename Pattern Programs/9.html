@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Pattern Coding</h1>
+     
+    <script>
+
+    //            *
+    //         *  *
+    //      *  *  *
+    //   *  *  *  *
+    
+    let str=''
+        for(let i=1; i<=4; i++)
+        {
+            for(let j=4; j>i; j--)
+            {
+                str=str+' '
+            }
+            for(let k=1; k<=i; k++)
+            {
+                str=str+'*'
+            }
+        str=str+'\n'
+        }
+        console.log(str);
+
+
+        // for(let i=1; i<=4; i++)
+        // {
+        //     for(let j=4; j>i; j--)
+        //     {
+        //         document.write(0 + ' ')
+        //     }
+        //     for(let k=1; k<=i; k++)
+        //     {
+        //         document.write('*' + ' ')
+        //     }
+        // document.write('<br>')
+        // }
+
+        // i+j>4 ? str=str+'*' : str=str=' '
+
+
+
+    </script>
+</body>
+</html>

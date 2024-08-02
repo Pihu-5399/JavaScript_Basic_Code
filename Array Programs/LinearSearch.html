@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    WAP to print the element is available or not (Linear Search)
+    <script>
+        let arr = [10, 20, 30, 40, 50]
+        let num = Number(prompt("Enter the number"))
+        let temp = 0;
+        for (let i = 0; i <=arr.length - 1; i++) {
+            if (arr[i] == num) {
+                temp++;
+                console.log("Element is found");
+                break;
+            }
+        }
+        if (temp == 0) {
+            console.log("Element is not found");
+        }
+    </script>
+</body>
+</html>
+

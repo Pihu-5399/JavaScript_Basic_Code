@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Find indexOf an Element
+        <br>
+        input
+        let input = [1,2,3,4,5]
+        let element = 1 
+        <br>
+        output = 0
+    </h1>
+    <script>
+        function findIndex(arr, ele){
+            let index = -1
+            for(let  i= 0; i< arr.length; i++){
+                if (arr[i] == ele){
+                    index = i
+                    break;
+                }
+            }
+            console.log(index);
+        }
+        let array = [1,2,3,4,5,6]
+        let value  = 1
+        findIndex(array, value)
+        let value1 = 6
+        findIndex(array,value1)
+        findIndex(array,5)
+        findIndex(array,2)
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let lower = Math.trunc(prompt('Enter lower range'))
+        let higher = Math.trunc(prompt('Enter higher range'))
+
+        let position=0
+
+        for (let i = lower; i <= higher; i++) {
+
+            let temp = i;
+            let sum = 0;
+            while (temp) {
+
+                fact = 1;
+
+               let rem = temp % 10;
+
+                for (let j = 1; j <= rem; j++) {
+                    fact = fact * j;
+                }
+
+                sum = sum + fact;
+                temp = Math.trunc(temp / 10);
+            }
+            if (sum == i) {
+                position++
+
+                if(position%2!=0){
+
+                    console.log('Strong number',i)
+                 }
+                
+            }
+         
+        }
+			
+			
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+db.createCollection("information",{
+    validator:{
+        $jsonSchema:{
+            required:['name','mobile','add'],
+            properties:{
+                name:{
+                    bsonType:"string",
+                    description:"name must be string type",
+                },
+                mobile:{
+                    bsonType:"number",
+                    description:" must be a number type",
+                },
+                add:{
+                    bsonType:"array",
+                    description:"must be array or required *",
+                    items:{
+                        bsonType:"object",
+                        required:['ca','pa'],
+                        properties:{
+                            ca:{
+                                bsonType:"string"
+                            },
+                            pa:{
+                                bsonType:"string"
+                            }
+                        }
+                    }
+                },
+            },
+        },
+    },
+    validationAction:"error"
+})
+// db.createCollection("validator",{
+//     validator:{
+//         $jsonSchema:{
+//             required:['name','age','add'],
+//             properties:{
+//                 name:{
+//                     bsonType:"string",
+//                     description:"name must be string type"
+//                 },
+//                 add:{
+//                     bsonType:"string",
+//                     description:" must be string type"
+//                 },
+//                 age:{
+//                     bsonType:"number",
+//                     description:"name must be a number type"
+//                 }
+//             }
+//         }
+//     },
+//     validationAction:"error"
+// })

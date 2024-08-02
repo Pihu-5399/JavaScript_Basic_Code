@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+</head>
+<body>
+    <h1>Factorial Of the Number</h1>
+    <script>
+        let num = Number(prompt("Enter The Number: "));
+        let fact =1;
+        let sum = 0;
+        let rem;
+        if(num < 0)
+        {
+            console.log("Factorial of Negative number doesn't exist");
+        }
+        else if(num == 0)
+        {
+            console.log(`The Factorial of ${fact} is 1.`);
+        }
+        else
+        {
+            for(let i =1;i<=num;i++)
+            {
+                fact = fact*i;
+            }
+            let temp = fact;
+            while(temp != 0){
+            rem = temp % 10;
+            sum = sum +rem;
+            temp = Math.trunc(temp/10); 
+        }
+            if(sum === fact){
+                console.log("is a perfect Number",num)
+            }
+            else{
+                console.log("is not a perfect Number",num)
+            }
+        
+            console.log(fact);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Practice example of type of object literal</h1>
+    <script>
+        let obj={
+            name:'pihu',
+            add:'JSR',
+            printDetails:function(){
+                console.log(this.name,this.add);
+            },
+            demo(){
+                console.log('hii i am demo');
+            }
+        }
+        obj.printDetails2=function(){
+            console.log('my name and add is',this.name,this.add);
+        }
+        obj.printDetails()
+        obj.printDetails2()
+        obj.demo()
+        console.log(obj);
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Number</title>
+</head>
+<body>
+    <h1>Palindrome Number</h1>
+    <script>
+        let num = Number(prompt("Enter The Number: "));
+        let reverseNum = 0;
+        let digit = num;
+
+        while(num>0)
+        {
+            let temp = num % 10;
+            reverseNum = reverseNum * 10 + temp;
+            num = Math.trunc(num/10); 
+        }
+        console.log(`The Reverse of ${digit} is :${reverseNum}`);
+        if(digit == reverseNum)
+        {
+            console.log("Number Is Palindrome")
+        }
+        else
+        {
+            console.log("Not a Palindrome");
+        }
+    </script>
+</body>
+</html>

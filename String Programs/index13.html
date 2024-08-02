@@ -1,0 +1,33 @@
+<!DOCTYPE html>isual
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    WAP to reverse a program in itself without using split method
+    <script>
+        let s1 = "Hello World !!!"
+        let res = "";
+        let output = "";
+        for (let i = 0; i <= s1.length; i++) {
+            if (s1.charAt(i) != " ") {
+                res = s1.charAt(i) + res;
+            }
+            else {
+                output += res + " ";
+                res = "";
+            }
+            if (i == s1.length - 1)
+            {
+                output += res + " "; 
+            }
+        }
+        console.log(output);
+    </script>
+</body>
+
+</html>

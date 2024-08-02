@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>create elements in dom</h1>
+    <div id="root">
+        <h1>I am first child</h1>
+    </div>
+    <script>
+        let root =document.getElementById('root')
+        //create element
+        let hed = document.createElement('h1')
+        //setAttribute
+        hed.setAttribute('text-align','center')
+        hed.setAttribute('class','abc')
+        hed.setAttribute('id','xyz')
+        // hed.className ="abc"
+        // hed.id="xyz" 
+        hed.innerText = "hello"
+        root.appendChild(hed)
+        console.log(hed);
+    </script>    
+</body>
+</html>

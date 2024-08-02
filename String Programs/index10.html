@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Occurance of each word in a string
+    <script>
+    let s ="Hello Mamul how are you Mamul"
+       let s1=s.split(" ");  //split method
+       for(i=0;i<s1.length;i++)
+       {
+        let count=1;
+        for(let j=i+1;j<s1.length;j++)
+        {
+            if(s1[i]==s1[j])
+            {
+                count++;
+                s1[j]="";
+            }
+        }
+        if(s1[i]!= "")
+        console.log(s1[i]+" = "+count);
+       }
+       
+    </script>
+</body>
+</html>

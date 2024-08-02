@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong Number</title>
+</head>
+
+<body>
+    <h1>Armstrong Number</h1>
+    <script>
+        let lower = Math.trunc(prompt('Enter lower range'))
+        let higher = Math.trunc(prompt('Enter higher range'))
+
+        let position = 0
+
+        for (let i = lower; i <= higher; i++) {
+
+            let length = 0;
+            let temp1 = i;
+            let sum = 0
+            let temp = i;
+
+            while (temp1 > 0) {
+                let rem = temp1 % 10;
+                length++;
+                temp1 = Math.trunc(temp1 / 10)
+            }
+
+            while (temp > 0) {
+                let rem = temp % 10;
+                sum += rem ** length;
+                temp = Math.trunc(temp / 10);
+            }
+
+            if (sum === i) {
+                position++
+
+                if (position % 2 == 0) {
+
+                    console.log(`${i} is a Armstrong Number`);
+                }
+
+            }
+
+        }
+    </script>
+</body>
+
+</html>ō

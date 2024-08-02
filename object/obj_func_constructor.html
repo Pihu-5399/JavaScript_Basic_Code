@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Function constructor way</h1>
+    <script>
+        function print(name,add) {
+            this.name=name
+            this.add=add
+            this.print2=function(){
+                console.log(this.name,this.add);
+            }
+        }
+        let obj = new print('pihu','jsr')
+        obj.demo=function(){
+            console.log('hii i am demo');
+        }
+        console.log(obj);
+    </script>
+</body>
+</html>

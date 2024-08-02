@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>let arr = [1,"a",2,"b",3,"c"](filter all numbers & String)
+        <br>
+        let  num = [1,2,3]
+        let str = ["a","b","c"]
+    </h1>
+    <script>
+        function separate (arr){
+            let numbers = []
+            let strings = []
+            for (let i=0; i < arr.length; i++){
+                //console.log(typeof arr[i]);
+                if (typeof arr[i] == "number"){
+                    numbers.push(arr[i])
+                }
+                else if (typeof arr[i] == "string"){
+                    strings.push(arr[i])
+                }
+            }
+            console.log(numbers);
+            console.log(strings);
+        }
+
+        let mixArray = [1,"abc",2,"z","x",4,5]
+        separate(mixArray)
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Print all the substrings in a given palindrome string
+    <script>
+        main()
+        function main() 
+        {
+            let s = "malayalam"
+            for (let i = 0; i<s.length; i++) 
+            {
+                for (let j = i + 1; j < s.length; j++) 
+                {
+                 let res=s.slice(i,j+1)
+                 if(isPal(res))
+                 console.log(res);
+                }
+            }
+        }
+        function isPal(s)
+        {
+        let i=0; 
+        let j=s.length-1;
+        while(i<j)
+        {
+         if(s.charAt(i)!=s.charAt(j)) return false;
+         i++;
+         j--;
+        }
+        return true;
+    }
+    </script>
+</body>
+
+</html>
